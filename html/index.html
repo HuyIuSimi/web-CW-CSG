@@ -6,66 +6,73 @@
     <style>
         * {
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         .bolder {
             width: auto;
-            border-radius: 0px;
+            border-radius: 25px;
             max-width: 100%;
             max-height: 100%;
-            ádasd
+
         }
 
         .bottom {
-            width: 120px;
-            max-width: 70%;
-            max-height: 70%%;
+            width: 1450px;
+            max-width: 100%;
+            max-height: 50%;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            border-radius: 25px;
 
         }
 
         .bottom2 {
-            width: 120px;
-            max-width: 70%;
-            max-height: 70%%;
+            width: 1450px;
+            max-width: 100%;
+            max-height: 50%;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            border-radius: 25px;
+
 
         }
 
         .bottom3 {
-            width: 120px;
-            max-width: 70%;
-            max-height: 70%%;
+            width: 1450px;
+            max-width: 100%;
+            max-height: 50%;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            border-radius: 25px;
 
         }
 
         body {
-            background: linear-gradient(135deg, #01365a, #e2e2da);
+            background-color: #aecf82;
             justify-content: center;
             align-items: center;
             height: 100%;
+            background-repeat: no-repeat;
+
 
         }
 
         .container {
             margin: 0 auto;
             max-width: auto;
-            width: 50%;
-            background: rgba(165, 196, 255, 0.979);
+            background: #ffda6b;
             padding: 30px;
             border-radius: 10px;
             font-family: 'Poppins', sans-serif;
+            width: 1450px;
+            max-width: 100%;
+            max-height: 50%;
+            margin-left: auto;
+            margin-right: auto;
 
 
         }
@@ -74,7 +81,7 @@
             font-size: 25px;
             font-weight: 500;
             position: relative;
-            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            background: #406484;
             text-align: center;
             color: #fff;
             ;
@@ -120,7 +127,7 @@
 
         .user-details .input-box input:focus,
         .user-details .input-box input:valid {
-            border-color: #9b59b6;
+            border-color: #6574fa;
         }
 
         form .Cơ-sở .cơ-sở-học {
@@ -154,7 +161,8 @@
         #dot-1:checked~.category label .one,
         #dot-2:checked~.category label .two,
         #dot-3:checked~.category label .three,
-        #dot-4:checked~.category label .four {
+        #dot-4:checked~.category label .four,
+        #dot-5:checked~.category label .five {
             border-color: #d9d9d9;
             background: #9b59b6;
         }
@@ -177,7 +185,7 @@
             font-size: 18px;
             font-weight: 500;
             letter-spacing: 1px;
-            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            background: #406484;
 
         }
 
@@ -187,7 +195,7 @@
 
         .myDiv {
             border: 5px outset rgb(238, 255, 0);
-            background: rgb(207, 207, 207);
+            background: #fffae7;
             text-align: center;
             font-size: 25px 30px;
         }
@@ -196,32 +204,32 @@
 
 <body>
     <img class="bolder" src="images/anh bia (1).png">
-    <img class="bottom" src="images/anh bia (4).png">
-    <img class="bottom2" src="images/anh bia (2).png">
-    <img class="bottom3" src="images/anh bia (3).png">
+    <img class="bottom" src="images/anh bia (2).png">
+    <img class="bottom2" src="images/anh bia (3).png">
+    <img class="bottom3" src="images/anh bia (4).png">
     <div class="container">
-        <div class="tittle">Đăng Ký Tham Gia Dự Thi</div>
-        <form action="#">
+        <div class="tittle" style="font-weight: bolder;font-size: 30px;">ĐĂNG KÝ THAM GIA DỰ THI</div>
+        <form action="#" method="post" onsubmit="return submitForm(this);">
             <div class="user-details">
                 <div class="input-box">
-                    <span class="details">Họ và Tên</span>
-                    <input type="text" placeholder="" required>
+                    <span class="details">HỌ VÀ TÊN</span>
+                    <input id="name" type="text" placeholder="" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Phone</span>
-                    <input type="text" placeholder="" required>
+                    <span class="details">PHONE</span>
+                    <input id="phone" type="text" placeholder="" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">MSSV(Ex:SE312822)</span>
-                    <input type="text" placeholder="" required>
+                    <span class="details">MSSV(EX:SE312822)</span>
+                    <input id="MSSV" type="text" placeholder="" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Email(@fpt.edu.vn)</span>
-                    <input type="text" placeholder="" required>
+                    <span class="details">EMAIL(@fpt.edu.vn)</span>
+                    <input id="email" type="text" placeholder="" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Địa Chỉ</span>
-                    <input type="text" placeholder="" required>
+                    <span class="details">ĐỊA CHỈ</span>
+                    <input id="address" type="text" placeholder="" required>
                 </div>
             </div>
             <div class="Cơ-sở">
@@ -229,6 +237,7 @@
                 <input type="radio" name="cơ-sở-họcc" id="dot-2">
                 <input type="radio" name="cơ-sở-họcc" id="dot-3">
                 <input type="radio" name="cơ-sở-họcc" id="dot-4">
+                <input type="radio" name="cơ-sở-họcc" id="dot-5">
                 <span class="cơ-sở-học">Cơ sở học</span>
                 <div class="category">
                     <label for="dot-1">
@@ -247,20 +256,116 @@
                         <span class="dot four"></span>
                         <span class="cơ-sở-họcc">TP.Cần Thơ</span>
                     </label>
+                    <label for="dot-5">
+                        <span class="dot five"></span>
+                        <span class="cơ-sở-họcc">Quy Nhơn</span>
+                    </label>
                 </div>
             </div>
             <div class="button">
-                <input type="submit" value="Đăng Kí">
+                <input type="submit" style="font-weight: bolder;" value="ĐĂNG KÝ">
+
+
             </div>
         </form>
     </div>
     <div class="myDiv">
         <h2>THÔNG TIN LIÊN HỆ</h2>
         <p>Mọi thông tin chi tiết xin liên hệ Facebook: Fanpage Câu Lạc Bộ Truyền Thông Cóc Sài Gòn
-            Email: cgs.spellingcoc@gmail.com
-            SĐT: 0815246723 (Nguyễn Ngọc Thiên Phú - Project Leader)
+            | EMAIL: cgs.spellingcoc@gmail.com
+            | SĐT: 0815246723 (Nguyễn Ngọc Thiên Phú - Project Leader)
         </p>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const address = document.getElementById('address');
+        const MSSV = document.getElementById('MSSV');
+        const phone = document.getElementById('phone');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            checkInputs();
+        });
+
+        function checkInputs() {
+            const nameValue = name.value.trim();
+            const emailValue = email.value.trim();
+            const MSSVValue = MSSV.value.trim();
+            const phoneValue = phone.value.trim();
+            const addressValue = address.value.trim();
+
+            if (nameValue === '') {
+                setErrorFor(name, 'Tên không thể trống');
+            } else {
+                setSuccessFor(name);
+            }
+
+            if (emailValue === '') {
+                setErrorFor(email, 'Email không thể trống');
+            } else if (!isEmail(emailValue)) {
+                setErrorFor(email, 'Email không hợp lệ');
+            } else {
+                setSuccessFor(email);
+            }
+
+            if (MSSVValue === '') {
+                setErrorFor(MSSV, 'MSSV không thể trống');
+            } else {
+                setSuccessFor(MSSV);
+            }
+
+            if (addressValue === '') {
+                setErrorFor(address, 'Địa chỉ không thể trống');
+            } else {
+                setSuccessFor(address);
+            }
+            if (phoneValue === '') {
+                setErrorFor(phone, 'SĐT không thể trống');
+            } else {
+                setSuccessFor(phone);
+            }
+        }
+
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = 'form-control error';
+            small.innerText = message;
+        }
+
+        function setSuccessFor(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-control success';
+
+        }
+        function submitForm(form) {
+            swal({
+                title: "ĐĂNG KÍ THÀNH CÔNG!",
+                text: "KIỂM TRA MAIL CỦA BẠN ĐỂ BIẾT THÊM THÔNG TIN!",
+                icon: "success",
+                buttons: true,
+
+            })
+                .then((isOkay) => {
+                    if (isOkay) {
+                        window.location.reload();
+                    }
+                });
+
+            return false;
+
+        }
+
+
+
+
+
+
+
+    </script>
 
 
 </body>
