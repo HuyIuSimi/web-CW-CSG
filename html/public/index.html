@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpellingCocContest</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bolder {
+            width: auto;
+            border-radius: 0px;
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+        .bottom {
+            width: 120px;
+            max-width: 70%;
+            max-height: 70%%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .bottom2 {
+            width: 120px;
+            max-width: 70%;
+            max-height: 70%%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .bottom3 {
+            width: 120px;
+            max-width: 70%;
+            max-height: 70%%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        body {
+            background: linear-gradient(135deg, #01365a, #e2e2da);
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: auto;
+            width: 50%;
+            background: rgba(165, 196, 255, 0.979);
+            padding: 30px;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        .container .tittle {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            text-align: center;
+            color: #fff;
+            ;
+        }
+
+        .container .tittle::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+        }
+
+        .container form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+
+        }
+
+        .user-details .input-box .details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .user-details .input-box input {
+            outline: none;
+            border-radius: 5px;
+            height: 45px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid {
+            border-color: #9b59b6;
+        }
+
+        form .Cơ-sở .cơ-sở-học {
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+
+        form .Cơ-sở .category {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            margin: 14px 0;
+        }
+
+        .Cơ-sở .category label {
+            display: flex;
+            align-items: center;
+        }
+
+        .Cơ-sở .category .dot {
+            height: 18px;
+            width: 18px;
+            background: #d9d9d9;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 5px solid transparent;
+
+        }
+
+        #dot-1:checked~.category label .one,
+        #dot-2:checked~.category label .two,
+        #dot-3:checked~.category label .three,
+        #dot-4:checked~.category label .four {
+            border-color: #d9d9d9;
+            background: #9b59b6;
+        }
+
+        form input[type="radio"] {
+            display: none;
+        }
+
+        form .button {
+            height: 45px;
+            margin: 45px 0;
+        }
+
+        form .button input {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+        }
+
+        form .button input:hover {
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+
+        .myDiv {
+            border: 5px outset rgb(238, 255, 0);
+            background: rgb(207, 207, 207);
+            text-align: center;
+            font-size: 25px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="bolder" src="images/anh bia (1).png">
+    <img class="bottom" src="images/anh bia (4).png">
+    <img class="bottom2" src="images/anh bia (2).png">
+    <img class="bottom3" src="images/anh bia (3).png">
+    <div class="container">
+        <div class="tittle">Đăng Ký Tham Gia Dự Thi</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Họ và Tên</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">MSSV(Ex:SE312822)</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email(@fpt.edu.vn)</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Địa Chỉ</span>
+                    <input type="text" placeholder="" required>
+                </div>
+            </div>
+            <div class="Cơ-sở">
+                <input type="radio" name="cơ-sở-họcc" id="dot-1">
+                <input type="radio" name="cơ-sở-họcc" id="dot-2">
+                <input type="radio" name="cơ-sở-họcc" id="dot-3">
+                <input type="radio" name="cơ-sở-họcc" id="dot-4">
+                <span class="cơ-sở-học">Cơ sở học</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="cơ-sở-họcc">TP.HCM</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="cơ-sở-họcc">Hà Nội</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="cơ-sở-họcc">TP.Đà Nẵng</span>
+                    </label>
+                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="cơ-sở-họcc">TP.Cần Thơ</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Đăng Kí">
+            </div>
+        </form>
+    </div>
+    <div class="myDiv">
+        <h2>THÔNG TIN LIÊN HỆ</h2>
+        <p>Mọi thông tin chi tiết xin liên hệ Facebook: Fanpage Câu Lạc Bộ Truyền Thông Cóc Sài Gòn
+            Email: cgs.spellingcoc@gmail.com
+            SĐT: 0815246723 (Nguyễn Ngọc Thiên Phú - Project Leader)
+        </p>
+    </div>
+
+
+</body>
+
+</html>
